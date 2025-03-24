@@ -1,0 +1,6 @@
+[site]
+bucket = "./dist"
+entry-point = "workers-site"
+
+[site.mutable_assets]
+type = "spa" 
