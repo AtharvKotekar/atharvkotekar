@@ -4,7 +4,7 @@ const Content = () => {
       <h1 className="text-4xl font-bold text-black px-10 text-start py-4 mt-10">
         content list.
       </h1>
-      <p className="text-xl max-w-200 py-2 px-10 text-start">
+      <p className="text-xl max-w-200 py-2 px-10 text-start max-w-2xl">
         these are a few pieces of content that i watched & read recently. some
         of which has <span className="text-[#FC5356]">deeply impacted</span> me and a few <span className="text-[#0BAF3C]">inspired</span> me by their depiction.
       </p>
