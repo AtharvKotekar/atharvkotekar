@@ -2,22 +2,20 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     
-    // Handle static assets
-    if (url.pathname.startsWith('/assets/')) {
+    // Handle static files first
+    if (
+      url.pathname.endsWith('.js') ||
+      url.pathname.endsWith('.css') ||
+      url.pathname.endsWith('.png') ||
+      url.pathname.endsWith('.jpg') ||
+      url.pathname.endsWith('.gif') ||
+      url.pathname.endsWith('.svg') ||
+      url.pathname.endsWith('.ico')
+    ) {
       return env.ASSETS.fetch(request);
     }
 
-    try {
-      // Try to serve the requested path
-      const response = await env.ASSETS.fetch(request);
-      if (response.status === 404) {
-        // If not found, serve index.html
-        return env.ASSETS.fetch(`${url.origin}/index.html`);
-      }
-      return response;
-    } catch {
-      // On error, serve index.html
-      return env.ASSETS.fetch(`${url.origin}/index.html`);
-    }
+    // For all other routes, serve index.html
+    return env.ASSETS.fetch(`${url.origin}/index.html`);
   }
 }; 

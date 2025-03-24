@@ -6,4 +6,9 @@ bucket = "./dist"
 
 [build]
 command = "npm run build"
-watch_dir = "src" 
+watch_dir = "src"
+
+[[rules]]
+type = "NavigationRoute"
+route = "/*"
+handler = "index.html" 
