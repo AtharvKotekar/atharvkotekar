@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom"
+ import { Link, useLocation } from "react-router-dom"
 
 export const MobileMenu = ({ menuOpen, setMenuOpen }: { menuOpen: boolean; setMenuOpen: (open: boolean) => void }) => {
     const location = useLocation();
