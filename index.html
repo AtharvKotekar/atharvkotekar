@@ -8,23 +8,6 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Atharv Kotekar</title>
-  <script>
-    function handleRouting() {
-      let path = window.location.hash.substring(1) || window.location.pathname;
-
-      // force hash routing if accessed directly
-      if (!window.location.hash) {
-        window.location.replace("/#" + path);
-        return;
-      }
-
-      document.getElementById("app").innerHTML = `<h1>You are at ${path}</h1>`;
-
-    }
-
-    window.addEventListener("hashchange", handleRouting);
-    handleRouting(); // run on initial load
-  </script>
 
 
 </head>
