@@ -6,9 +6,7 @@ import Home from "./pages/Home";
 import { useState } from "react";
 import { LoadingScreen } from "./components/LoadingScreen";
 import NotFound from "./pages/NotFound";
-import { Analytics } from '@vercel/analytics/react';
 import { Helmet } from 'react-helmet-async';
-
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -28,7 +26,6 @@ function App() {
         <meta name='reply-to' content='yo@atharvkotekar.com' />
         <meta name='copyright' content='Atharv Kotekar' />
         <meta name='language' content='English' />
-        
       </Helmet>
       {!isLoaded && (
         <LoadingScreen
@@ -43,7 +40,6 @@ function App() {
         } bg-[#f5f5f7]`}
       >
         <Navbar />
-        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/content" element={<Content />} />
@@ -51,7 +47,6 @@ function App() {
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
-      <Analytics />
     </>
   );
 }

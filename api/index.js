@@ -7,29 +7,27 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
-// Set proper MIME types
-app.use((req, res, next) => {
-  if (req.url.endsWith('.css')) {
-    res.type('text/css');
-  }
-  next();
-});
-
-// Serve static files from the dist directory with proper caching
+// Serve static files from the dist directory
 app.use(express.static(path.join(__dirname, '../dist'), {
-  maxAge: '1d',
-  etag: true,
-  lastModified: true,
-  setHeaders: (res, path) => {
-    if (path.endsWith('.css')) {
-      res.setHeader('Cache-Control', 'public, max-age=86400');
+  setHeaders: (res, filePath) => {
+    // Set proper MIME types
+    if (filePath.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript');
+    }
+    if (filePath.endsWith('.css')) {
+      res.setHeader('Content-Type', 'text/css');
+    }
+    
+    // Set cache headers for static assets
+    if (filePath.includes('/assets/')) {
+      res.setHeader('Cache-Control', 'public, max-age=31536000, immutable');
     }
   }
 }));
 
 // Handle all routes by serving index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../dist', 'index.html'));
+  res.sendFile(path.join(__dirname, '../dist/index.html'));
 });
 
 // Export the Express app for Vercel
