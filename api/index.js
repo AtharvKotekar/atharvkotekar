@@ -7,12 +7,22 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 
+// Set proper MIME types for JavaScript modules
+app.use((req, res, next) => {
+  if (req.url.endsWith('.js')) {
+    res.setHeader('Content-Type', 'application/javascript');
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+  }
+  next();
+});
+
 // Serve static files from the dist directory
 app.use(express.static(path.join(__dirname, '../dist'), {
   setHeaders: (res, filePath) => {
     // Set proper MIME types
     if (filePath.endsWith('.js')) {
       res.setHeader('Content-Type', 'application/javascript');
+      res.setHeader('X-Content-Type-Options', 'nosniff');
     }
     if (filePath.endsWith('.css')) {
       res.setHeader('Content-Type', 'text/css');
