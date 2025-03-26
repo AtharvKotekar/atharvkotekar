@@ -8,7 +8,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-6 right-10 flex flex-col items-end justify-center gap-3 p-4">
+      <nav className="fixed top-2 right-4 flex flex-col items-end justify-center gap-3 p-4">
         {/* Desktop Menu */}
         <div className="hidden md:flex flex-col items-end gap-3">
           <Link

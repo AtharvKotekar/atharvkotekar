@@ -15,7 +15,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }: { menuOpen: boolean; setMe
       >
         <button
           onClick={() => setMenuOpen(false)}
-          className="fixed top-6 right-10 p-4 text-[#1d1d1f] focus:outline-none cursor-pointer justify-center items-center"
+          className="fixed top-2 right-4 p-6 text-[#1d1d1f] focus:outline-none cursor-pointer justify-center items-center"
           aria-label="Close Menu"
         >
           &times;
@@ -34,7 +34,7 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }: { menuOpen: boolean; setMe
             className={`text-2xl ${location.pathname === "/content" ? "underline" : ""}`}
             onClick={() => setMenuOpen(false)}
           >
-            content
+            content i like
           </Link>
           <Link 
             to="/writings" 
