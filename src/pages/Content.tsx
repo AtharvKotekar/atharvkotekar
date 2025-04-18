@@ -6,7 +6,7 @@ const Content = () => {
       </h1>
       <p className="text-xl py-2 px-10 text-start max-w-2xl">
         these are a few pieces of content that i watched & read recently. some
-        of which has <span className="text-[#FC5356]">deeply impacted</span> me
+        of which have <span className="text-[#FC5356]">deeply impacted</span> me
         and a few <span className="text-[#0BAF3C]">inspired</span> me by their
         depiction.
       </p>
@@ -24,11 +24,11 @@ const Content = () => {
 
         <li className="py-2">
           <a
-            href="https://www.netflix.com/in/title/81040344?source=35"
+            href="https://youtu.be/FU_YFpfDqqA?si=CCnneE_n88pBb4vY"
             target="_blank"
             rel="noopener noreferrer"
           >
-            squid game s2 - netflix
+            why the first computers were made out of light bulbs - veritasium
           </a>
         </li>
         <li className="py-2 text-[#FC5356]">
@@ -42,11 +42,11 @@ const Content = () => {
         </li>
         <li className="py-2">
           <a
-            href="https://www.goodreads.com/book/show/41721428-can-t-hurt-me"
+            href="https://www.hotstar.com/in/shows/silicon-valley/1971002879?utm_source=gwa"
             target="_blank"
             rel="noopener noreferrer"
           >
-            can't hurt me - david goggins
+            silicon valley - hbo
           </a>
         </li>
         <li className="py-2 text-[#0BAF3C]">
@@ -55,7 +55,25 @@ const Content = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            whiplash - jason zenger
+            whiplash - damien chazelle
+          </a>
+        </li>
+        <li className="py-2">
+          <a
+            href="https://paulgraham.com/writes.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            writes and write-nots - paul graham
+          </a>
+        </li>
+        <li className="py-2 text-[#0BAF3C]">
+          <a
+            href="https://youtu.be/DxL2HoqLbyA?si=WoDzGVrVQ8mpOKEk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            the most misunderstood concept in physics (entropy) - veritasium
           </a>
         </li>
       </ul>
