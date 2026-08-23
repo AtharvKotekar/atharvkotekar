@@ -1,16 +1,13 @@
-## Hi there 👋
+# hi, i’m atharv
 
-<!--
-**AtharvKotekar/atharvkotekar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+i started working at a computer repair shop at 12, repairing laptops, laying fiber cables, and installing cctv.
 
-Here are some ideas to get you started:
+built my first app at 15 and got 21,000+ installs on the play store.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+won the new york academy of sciences innovation challenge.
+
+previous genai engineer at bombay locale; resident hacker at localhosthq hackerhouse.
+
+currently studying math and neural networks.
+
+contact me at yo@atharvkotekar.com or dm me on [x](https://x.com/_atharvkotekar).
