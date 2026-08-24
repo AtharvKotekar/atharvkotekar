@@ -6,7 +6,7 @@ built my first app at 15 and got 21,000+ installs on the play store.
 
 won the new york academy of sciences innovation challenge.
 
-previous genai engineer at bombay locale; resident hacker at localhosthq hackerhouse.
+previously: genai engineer at bombay locale; resident hacker at localhosthq hackerhouse.
 
 currently studying math and neural networks.
 
