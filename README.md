@@ -8,6 +8,6 @@ won the new york academy of sciences innovation challenge.
 
 previously: genai engineer at bombay locale; resident hacker at localhosthq hackerhouse.
 
-currently studying math and neural networks.
+currently studying math and neural networks. incoming freshman at the university of charleston, west virginia.
 
 contact me at yo@atharvkotekar.com or dm me on [x](https://x.com/_atharvkotekar).
