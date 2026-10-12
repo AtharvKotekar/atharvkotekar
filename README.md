@@ -2,7 +2,7 @@
 
 i started working at a computer repair shop at 12, repairing laptops, laying fiber cables, and installing cctv.
 
-built my first app at 15 and got 21,000+ installs on the play store.
+built my first app at 15 and got 23,000+ installs on the play store.
 
 won the new york academy of sciences innovation challenge.
 
